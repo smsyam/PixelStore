@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syam's Digital Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light-mode">
+    <div id="loader">
+        <div class="loader-dot"></div>
+    </div>
+
+    <!-- Reactive Background -->
+    <div class="reactive-background"></div>
+
+    <!-- Greeting Section -->
+    <div class="personal-greeting">
+        👋 Hey there! Welcome to Syam’s Digital Store. Find your next creation here!
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+
+    <!-- Theme Toggle Button -->
+    <button id="theme-toggle" class="theme-button">☀️</button>
+
+    <!-- Header -->
+    <header>
+        <h1>Syam’s Digital Store</h1>
+        <p>Your one-stop shop for ebooks, templates, and courses.</p>
+    </header>
+
+    <!-- Product Grid -->
+    <main>
+        <div class="product-grid">
+
+            <!-- Example Product Card -->
+            <div class="product-card" data-category="ebook" >
+                <img src="https://i.postimg.cc/sXnLPbmK/create-a-modern-minimalist-and-student-f-g-f-N2-P98-QYape-Oj-NPqz-Etw-S7-Lq-Jwh-GQD2-T8-Bz-XN7j-Qgg.jpg" alt="StudyCreate eBook">
+                <h2>StudyCreate eBook</h2>
+                <p>$2</p>
+                <a href="https://smsyam.gumroad.com/l/StudyCreate" target="_blank">
+                    <button class="open-btn">OPEN</button>
+                </a>
+                <div class="trust-badges">
+                    <span class="secure">✅ Secure Payment</span>
+                    <span class="delivery">📩 Instant Delivery</span>
+                </div>
+            </div>
+
+            <!-- More Product Cards -->
+
+            <div class="product-card" data-category="course">
+                <img src="https://via.placeholder.com/300" alt="Course Product">
+                <h2>Course Bundle</h2>
+                <p>$20</p>
+                <a href="https://gumroad.com" target="_blank">
+                    <button class="open-btn">OPEN</button>
+                </a>
+                <div class="trust-badges">
+                    <span class="secure">✅ Secure Payment</span>
+                    <span class="delivery">📩 Instant Delivery</span>
+                </div>
+            </div>
+
+
+            <div class="product-card" data-category="course, ebook" >
+                <img src="https://via.placeholder.com/300" alt="Template Product">
+                <h2>eBooks + Course</h2> 
+                <p>$195</p>
+                <a href="https://gumroad.com" target="_blank">
+                    <button class="open-btn">OPEN</button>
+                </a>
+                <div class="trust-badges">
+                    <span class="secure">✅ Secure Payment</span>
+                    <span class="delivery">📩 Instant Delivery</span>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- No Products Message -->
+        <div id="no-products-message" style="display:none; text-align:center; font-size:1.2rem; padding:20px; color:#ff0000;">
+            No products found in this category.
+        </div>
+    </main>
+
+    <!-- Floating Category Menu -->
+    <div class="category-menu">
+        <button id="menu-toggle" class="menu-button">☰</button>
+        <div class="category-items">
+            <button class="category-btn" data-category="all">🔁 All</button>
+            <button class="category-btn" data-category="ebook">📚 Ebooks</button>
+            <button class="category-btn" data-category="template">📝 Templates</button>
+            <button class="category-btn" data-category="course">🎓 Courses</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Syam’s Digital Store</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
